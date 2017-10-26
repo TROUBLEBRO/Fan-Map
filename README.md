@@ -1,1 +1,2 @@
-# coursework-foundation-of-datascience
+# COMP6235 Group Courework
+# University of Southampton
