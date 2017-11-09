@@ -10,6 +10,8 @@ user=getUser("")
 user_follower_IDs=user$getFollowers(retryOnRateLimit=180)
 user_follower_IDs = user$getFollowers()
 length(user_follower_IDs)
+#remove followers that don't report a location
+user_follower_IDs = subset(user_follower_IDs, location!="")
 result<- sapply(user_follower_IDs, function(x) c(x$name, x$location))
 write.csv(t(result),"G:\\Data.csv",row.names = FALSE)
 
