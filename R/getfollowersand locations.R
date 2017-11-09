@@ -1,11 +1,12 @@
 library(twitteR)
 library(ROAuth)
 library(RCurl)
-setup_twitter_oauth(consumer_key = "1a11c08HYb1oxtlBxRLnAhSVw",
-                    consumer_secret = "sy81HBwKoiPspemopDXnuEp3I0Edbny709rYe5eDjhdFXEvb19",
-                    access_token = "717540844295688192-qn3zOB1diFNR8QL39UobVuCM8RQ87LT",
-                    access_secret = "G18VLbwhEmZZESKKdaSN0RdR25et4rr8f8VQL8uqd2rzX")
-user=getUser("MMR8000")
+setup_twitter_oauth(consumer_key = "",
+                    consumer_secret = "",
+                    access_token = "",
+                    access_secret = "")
+#change it by yourself
+user=getUser("") 
 user_follower_IDs=user$getFollowers(retryOnRateLimit=180)
 user_follower_IDs = user$getFollowers()
 length(user_follower_IDs)
