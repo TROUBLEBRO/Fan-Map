@@ -7,7 +7,8 @@ setup_twitter_oauth(consumer_key = "",
                     access_secret = "")
 #change it by yourself
 user=getUser("") 
-user_follower_IDs=user$getFollowers(retryOnRateLimit=180)
+user_follower_IDs=lookupUsers(user$getFollowerIDs(100000))
+length(user_follower_IDs)
 user_follower_IDs = user$getFollowers()
 length(user_follower_IDs)
 #remove followers that don't report a location
