@@ -1,5 +1,6 @@
 library(twitteR)
 library(ROAuth)
+library(bitops)
 library(RCurl)
 setup_twitter_oauth(consumer_key = "",
                     consumer_secret = "",
